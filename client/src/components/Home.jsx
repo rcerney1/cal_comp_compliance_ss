@@ -1,35 +1,47 @@
 import Navbar from "./Navbar";
 import heroImage from "../assets/hero.jpg";
 import section1Image from "../assets/section1.jpg";
+import elegantHome from "../assets/elegant_home_2.jpg"
+import sophisticated from "../assets/sophisticated.jpg"
+import { Link, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 function Home() {
+    const location = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0,0)
+    }, [location]);
+
     return (
         <div className="text-gray-900 bg-white font-sans">
             <Navbar />
-
             {/* Hero Section */}
             <section className="relative w-full h-screen">
                 <img
-                    src={heroImage}
+                    src={sophisticated}
                     alt="Security technician"
-                    className="absolute inset-0 w-full h-full object-cover"
+                    className="absolute inset-0 w-full h-full object-cover object-center"
                 />
-                <div className="absolute inset-0 bg-black/40 flex flex-col items-start justify-center px-6 md:px-16 text-left">
+                <div className="absolute inset-0 bg-black/40 flex flex-col items-start justify-end px-6 md:px-16 text-left pb-24 md:pb-40">
                     <h1
-                        className="text-4xl md:text-6xl font-bold text-white mb-4"
+                        className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-4 max-w-5xl"
                         data-aos="fade-up"
                     >
-                        Discreet. Dependable. Designed for You.
+                        Introducing California Compliance Security Services
                     </h1>
                     <p
-                        className="text-lg md:text-xl text-gray-200 max-w-xl"
+                        className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 max-w-5xl"
                         data-aos="fade-up"
                         data-aos-delay="100"
                     >
-                        Tailored low voltage systems for premium homes and businesses.
+                        Your trusted partner in providing discreet, reliable, and custom security solutions for premium homes and businesses.
                     </p>
                 </div>
             </section>
+
+
+
 
             {/* Why Choose Us Section */}
             <section
@@ -38,7 +50,7 @@ function Home() {
                 data-aos-delay="200"
             >
                 <h2 className="text-3xl md:text-5xl font-semibold mb-8">
-                    Why Choose California Comp Security?
+                    Why Choose California Compliance Security Services?
                 </h2>
                 <p className="text-lg md:text-xl text-gray-700 max-w-4xl mb-12 leading-relaxed">
                     We specialize in designing and installing low voltage security
@@ -47,9 +59,11 @@ function Home() {
                     entry systems — we deliver professional, discreet, and reliable
                     service every time.
                 </p>
-                <button className="bg-[#e79c8b] hover:bg-[#d98978] text-white font-medium px-8 py-3 rounded-md transition">
-                    Learn More
-                </button>
+                <Link to="/about">
+                    <button className="bg-[#e79c8b] hover:bg-[#d98978] text-white font-medium px-8 py-3 rounded-md transition">
+                        Learn More
+                    </button>
+                </Link>
             </section>
 
             {/* Peace of Mind Section */}
@@ -162,12 +176,14 @@ function Home() {
 
                 {/* CTA Button at the Bottom */}
                 <div className="text-center mt-12">
-                    <a
-                        href="#services"
-                        className="bg-[#e79c8b] hover:bg-[#d98978] text-white font-semibold px-8 py-3 rounded-md transition"
-                    >
-                        View Our Full Services
-                    </a>
+                    <Link to="/services">
+                        <a
+                            href="#services"
+                            className="bg-[#e79c8b] hover:bg-[#d98978] text-white font-semibold px-8 py-3 rounded-md transition"
+                        >
+                            View Our Full Services
+                        </a>
+                    </Link>
                 </div>
             </section>
 
@@ -179,12 +195,14 @@ function Home() {
                 <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto">
                     Our team of experts is ready to provide you with reliable, discreet, and professional security solutions tailored to your needs. Let’s get started today!
                 </p>
-                <a
-                    href="#" 
-                    className="bg-[#e79c8b] hover:bg-[#d98978] text-white font-semibold px-8 py-3 rounded-md transition"
-                >
-                    Get Started
-                </a>
+                <Link to ="/contact">
+                    <a
+                        href="#"
+                        className="bg-[#e79c8b] hover:bg-[#d98978] text-white font-semibold px-8 py-3 rounded-md transition"
+                    >
+                        Get Started
+                    </a>
+                </Link>
             </section>
 
 
@@ -201,7 +219,7 @@ function Home() {
 
                     {/* Copyright */}
                     <p className="text-sm text-gray-400">
-                        &copy; {new Date().getFullYear()} California Comp Security. All rights reserved.
+                        &copy; {new Date().getFullYear()} California Compliance Security Services. All rights reserved.
                     </p>
                 </div>
             </footer>
