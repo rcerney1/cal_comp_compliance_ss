@@ -14,7 +14,7 @@ require('dotenv').config();
 app.use(cors()); // Allow cross-origin requests
 app.use(bodyParser.json()); // Parse JSON bodies
 
-// Use helmet to add security headers
+// Use helmet to add security headers s
 app.use(
     helmet.contentSecurityPolicy({
         directives: {
