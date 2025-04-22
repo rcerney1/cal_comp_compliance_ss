@@ -17,7 +17,7 @@ app.use(bodyParser.json()); // Parse JSON bodies
 app.use(
     helmet.contentSecurityPolicy({
         directives: {
-            // Allow all sources by default (you could change this to a more restrictive policy if needed)
+            // Allow all sources by default
             defaultSrc: ["'self'"], // This allows requests to the same origin, change this based on your needs
 
             // Allow stylesheets from the same origin and Google Fonts
