@@ -76,7 +76,7 @@ if (process.env.NODE_ENV === 'production') {
 
     // Serve index.html for all non-API requests (enables React routing)
     app.get('*', (req, res) => {
-        res.sendFile(path.join(__dirname, '../client//build/index.html'));
+        res.sendFile(path.join(__dirname, '../client/build/index.html'));
     });
 }
 
