@@ -1,25 +1,25 @@
-# Node.js dependencies
+# # Node.js dependencies
 
 
-# Environment variables
-.env
+# # Environment variables
+# .env
 
-# Logs
-*.log
+# # Logs
+# *.log
 
-# OS-specific files
-.DS_Store
-Thumbs.db
+# # OS-specific files
+# .DS_Store
+# Thumbs.db
 
-# IDE-specific files (e.g., VSCode, JetBrains, etc.)
-.vscode/
-.idea/
+# # IDE-specific files (e.g., VSCode, JetBrains, etc.)
+# .vscode/
+# .idea/
 
-# Build output
-dist/
-build/
+# # Build output
+# dist/
+# build/
 
-# npm log files
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# # npm log files
+# npm-debug.log*
+# yarn-debug.log*
+# yarn-error.log*
