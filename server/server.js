@@ -24,7 +24,7 @@ app.use(
             scriptSrc: ["'self'", "'unsafe-inline'"], // Allow inline scripts and self for scripts
             imgSrc: ["'self'", "data:", "https://res.cloudinary.com"], // Allow images from self and data URLs
             connectSrc: ["'self'"], // Allow connections to self (AJAX, WebSockets)
-            // Add other directives as needed for your app (e.g., media, object-src, etc.)
+            // Add other directives as needed for your app (e.g., media, object-src, etc.)  d
         },
     })
 );
