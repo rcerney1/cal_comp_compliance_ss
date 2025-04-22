@@ -1,16 +1,18 @@
 import { useState, useEffect } from 'react';
-import Navbar from "../components/Navbar";  // Import your Navbar component
+import Navbar from "../components/Navbar"; 
 import { useLocation } from "react-router-dom";
 
 function Contact() {
     const [loading, setLoading] = useState(false);
     const [status, setStatus] = useState("");
     const location = useLocation();
+    const backendUrl = process.env.REACT_APP_BACKEND_URL
+    //const backendUrl = 'http://localhost:5000'  
 
     useEffect(() => {
-        window.scrollTo(0,0)
+        window.scrollTo(0, 0)
     }, [location]);
-    
+
 
     // Handle the form submission
     const handleSubmit = async (e) => {
@@ -25,11 +27,18 @@ function Contact() {
             message: formData.get('message'),
         };
 
+        // Email validation using a regex pattern
+        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        if (!emailPattern.test(data.email)) {
+            setStatus("Please enter a valid email address.");
+            return;
+        }
+
         setLoading(true);
         setStatus("Sending...");
 
         try {
-            const response = await fetch('http://localhost:5000/api/send-email', { 
+            const response = await fetch(`${backendUrl}/api/send-email`, { // Use the backend URL from the environment variable
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -52,7 +61,7 @@ function Contact() {
     return (
         <div className="text-gray-900 bg-white font-sans">
             <Navbar />
-            
+
             {/* Contact Form Section */}
             <section className="min-h-screen py-12 px-6 text-center bg-gray-50 mt-24"> {/* Adjusted to min-h-screen for better mobile fit */}
                 <h2 className="text-4xl md:text-5xl font-semibold mb-8">Contact Us</h2>

@@ -1,5 +1,9 @@
 {
   "dependencies": {
     "dotenv": "^16.5.0"
+  },
+  "scripts": {
+    "postinstall": "cd frontend && npm install && npm run build"
+    
   }
 }
