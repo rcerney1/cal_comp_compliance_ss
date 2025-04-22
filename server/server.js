@@ -2,7 +2,6 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const path = require('path');  // Required to join paths for static files
-const helmet = require('helmet');  // Added Helmet for security headers
 const { sendEmail } = require('./emailService');
 
 const app = express();
@@ -13,21 +12,6 @@ require('dotenv').config();
 // Middleware
 app.use(cors()); // Allow cross-origin requests
 app.use(bodyParser.json()); // Parse JSON bodies
-
-// Use helmet to add security headers
-app.use(
-  helmet.contentSecurityPolicy({
-    directives: {
-      defaultSrc: ["'self'"], // Allow same-origin requests
-      styleSrc: ["'self'", "https://fonts.googleapis.com"], // Allow stylesheets from the same origin and Google Fonts
-      fontSrc: ["'self'", "https://fonts.gstatic.com"], // Allow fonts from Google Fonts
-      scriptSrc: ["'self'", "'unsafe-inline'"], // Allow inline scripts and self for scripts
-      imgSrc: ["'self'", "data:", "https://res.cloudinary.com"], // Allow images from self and data URLs
-      connectSrc: ["'self'"], // Allow connections to self (AJAX, WebSockets)
-      // Add other directives as needed for your app (e.g., media, object-src, etc.)
-    },
-  })
-);
 
 // Handle form submission
 app.post('/api/send-email', async (req, res) => {
