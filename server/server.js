@@ -6,6 +6,8 @@ const { sendEmail } = require('./emailService');
 const app = express();
 const port = process.env.PORT || 5000;
 
+require('dotenv').config();
+
 // Middleware
 app.use(cors()); // Allow cross-origin requests
 app.use(bodyParser.json()); // Parse JSON bodies
