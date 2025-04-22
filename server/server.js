@@ -14,26 +14,37 @@ require('dotenv').config();
 app.use(cors()); // Allow cross-origin requests
 app.use(bodyParser.json()); // Parse JSON bodies
 
-// Use helmet to add security headers s
-// app.use(
-//     helmet.contentSecurityPolicy({
-//         directives: {
-//             defaultSrc: ["'self'"], // Allow same-origin requests
-//             styleSrc: ["'self'", "https://fonts.googleapis.com"], // Allow stylesheets from the same origin and Google Fonts
-//             fontSrc: ["'self'", "https://fonts.gstatic.com"], // Allow fonts from Google Fonts
-//             scriptSrc: ["'self'", "'unsafe-inline'"], // Allow inline scripts and self for scripts
-//             imgSrc: ["'self'", "data:", "https://res.cloudinary.com"], // Allow images from self and data URLs
-//             connectSrc: ["'self'"], // Allow connections to self (AJAX, WebSockets)
-//             // Add other directives as needed for your app (e.g., media, object-src, etc.)  d
-//         },
-//     })
-// );
-
 app.use(
-    helmet({
-        contentSecurityPolicy: false,
+    helmet.contentSecurityPolicy({
+        directives: {
+            // Allow all sources by default (you could change this to a more restrictive policy if needed)
+            defaultSrc: ["'self'"], // This allows requests to the same origin, change this based on your needs
+
+            // Allow stylesheets from the same origin and Google Fonts
+            styleSrc: ["'self'", "https://fonts.googleapis.com"],
+
+            // Allow style elements from Google Fonts
+            styleSrcElem: ["'self'", "https://fonts.googleapis.com"],
+
+            // Allow fonts from Google Fonts
+            fontSrc: ["'self'", "https://fonts.gstatic.com"], 
+
+            // Allow inline scripts and self for scripts
+            scriptSrc: ["'self'", "'unsafe-inline'"],
+
+            // Allow images from self, data URLs, and Cloudinary
+            imgSrc: ["'self'", "data:", "https://res.cloudinary.com"],
+
+            // Allow connections to self (AJAX, WebSockets)
+            connectSrc: ["'self'"],
+
+            // Add other directives as needed for your app (e.g., media, object-src, etc.)
+        },
     })
-)
+);
+
+
+
 
 // Handle form submission
 app.post('/api/send-email', async (req, res) => {
