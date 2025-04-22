@@ -18,7 +18,7 @@ app.use(
     helmet.contentSecurityPolicy({
         directives: {
             // Allow same-origin resources by default
-            defaultSrc: ["'self'"],
+            defaultSrc: ["'none'"],
 
             // Allow stylesheets from the same origin and Google Fonts
             styleSrc: ["'self'", "https://fonts.googleapis.com"],
