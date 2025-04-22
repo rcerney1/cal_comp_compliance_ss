@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const path = require('path');  // Required to join paths for static files
+const path = require('path');  
 const { sendEmail } = require('./emailService');
 
 const app = express();
