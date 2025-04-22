@@ -49,7 +49,7 @@ app.use(
 // Handle form submission
 app.post('/api/send-email', async (req, res) => {
     const { name, email, message } = req.body;
-
+    console.log('something anything')
     console.log(req.body); // Logs the form submission data
 
     if (!name || !email || !message) {
