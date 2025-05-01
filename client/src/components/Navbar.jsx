@@ -60,14 +60,18 @@ function Navbar() {
                 </div>
 
                 {/* Right: CTA Button */}
-                <div className="hidden md:block">
-                    <Link
-                        to="/contact"
-                        className="bg-[#e79c8b] hover:bg-[#d98978] text-white font-semibold px-8 py-3 rounded-md transition"
-                    >
-                        Get Started
-                    </Link>
-                </div>
+                {/* Right: CTA Button (hide on contact page) */}
+                {!isContactPage && (
+                    <div className="hidden md:block">
+                        <Link
+                            to="/contact"
+                            className="bg-[#e79c8b] hover:bg-[#d98978] text-white font-semibold px-8 py-3 rounded-md transition"
+                        >
+                            Get Started
+                        </Link>
+                    </div>
+                )}
+
 
                 {/* Mobile Menu Toggle */}
                 <button
