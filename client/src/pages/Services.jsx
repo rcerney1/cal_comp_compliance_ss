@@ -137,7 +137,7 @@ function Services() {
 
                     {/* Service 7: Audio 70 Volt Broadcast Systems */}
                     <div className="col-span-full flex justify-center">
-                        <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                        <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow w-full sm:w-[90%] md:w-[80%] lg:w-[60%] max-w-md">
                             <div className="flex items-center justify-center mb-4">
                                 <FaBroadcastTower className="text-5xl text-[#e79c8b]" />
                             </div>
@@ -150,6 +150,7 @@ function Services() {
                             </p>
                         </div>
                     </div>
+
 
                 </div>
 
