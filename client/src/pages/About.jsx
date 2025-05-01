@@ -55,7 +55,7 @@ function About() {
                     <div>
                         <h3 className="text-4xl md:text-5xl font-bold mb-6">Professional Staff</h3>
                         <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla placerat, ligula in eleifend vulputate, purus urna scelerisque eros, vitae facilisis nunc libero sit amet lorem. Duis at est eu orci fringilla aliquet sit amet id nisi. Curabitur euismod metus ut nulla sollicitudin, sed aliquet eros placerat.
+                        Our team is made up of skilled, courteous professionals who take pride in their craftsmanship and attention to detail. We understand the importance of working discreetly and respectfully in both residential and commercial settings, ensuring every job is completed to the highest standards. From the initial consultation to final installation, our technicians are committed to clear communication, punctuality, and delivering a stress-free experience for every client.
                         </p>
                     </div>
                 </div>
@@ -76,7 +76,7 @@ function About() {
                             Tailored Security Solutions
                         </h3>
                         <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                            Donec malesuada, justo ut fringilla fermentum, erat dui sodales nisi, ac tempus sem ligula ut elit. Suspendisse potenti. Mauris consequat orci sit amet dui varius, nec cursus ante tincidunt. Phasellus nec justo ut metus dapibus gravida. Aliquam erat volutpat. Nulla sed suscipit lorem.
+                        Every property is different — that’s why we don’t believe in one-size-fits-all solutions. Whether you're outfitting a high-end home or a commercial facility, we take the time to understand your specific layout, concerns, and goals. From initial design to installation, we deliver fully customized security and A/V systems that align with your space and lifestyle, using only trusted, industry-leading technology.
                         </p>
                     </div>
                 </div>
@@ -97,7 +97,7 @@ function About() {
                             Our Approach
                         </h3>
                         <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                            Curabitur sit amet gravida magna. Suspendisse euismod augue id velit euismod, ac venenatis libero tempor. Nam ut orci erat. Nulla facilisi. Etiam pharetra diam ut justo lacinia, et posuere tortor hendrerit. Donec at felis arcu. Phasellus eget ante eu ligula feugiat faucibus nec in ante.
+                        At California Compliance Security Services, our approach is rooted in communication, precision, and trust. We begin every project by listening closely to your needs, walking through your property, and outlining a clear plan of action. Our team ensures a smooth process from start to finish, handling every detail with care so you feel confident and informed at every step.  
                         </p>
                     </div>
                 </div>
