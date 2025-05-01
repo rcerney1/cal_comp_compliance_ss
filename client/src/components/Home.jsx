@@ -31,19 +31,19 @@ function Home() {
                     >
                         Introducing California Compliance Security Services
                     </h1>
-                    <p
+                    {/* <p
                         className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 max-w-5xl"
                         data-aos="fade-up"
                         data-aos-delay="200"
                     >
                         Leading provider in home automation, audio, video, and low voltage services.
-                    </p>
+                    </p> */}
                     <p
                         className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 max-w-5xl"
                         data-aos="fade-up"
                         data-aos-delay="100"
                     >
-                        Your trusted partner in providing discreet, reliable, and custom security solutions for premium homes and businesses.
+                        Your trusted partner in providing discreet, reliable, and custom security solutions for premium homes and businesses. Leading provider in home automation, audio, video, and low voltage services.
                     </p>
                 </div>
             </section>
