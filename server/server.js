@@ -36,7 +36,7 @@ app.use(
             imgSrc: ["'self'", "data:", "https://res.cloudinary.com"],
 
             // Allow connections to self (AJAX, WebSockets)
-            connectSrc: ["'self'", "https:"],
+            connectSrc: ["'self'", "*"],
         },
     })
 );
