@@ -17,18 +17,18 @@ const transporter = nodemailer.createTransport({
     },
 });
 
-
-
 // Create a function to send an email
 const sendEmail = async (fromEmail, subject, text) => {
     
     
     const mailOptions = {
-        from: fromEmail, 
-        to: process.env.EMAIL_USER, 
-        subject, 
-        text, 
+        from: process.env.EMAIL_USER,        // always your verified domain email
+        to: process.env.EMAIL_USER,          // or wherever you want to receive it
+        subject,                             // subject from the form
+        text,                                // the message content
+        replyTo: fromEmail,                  // ← allows you to click "Reply" and it goes to the user's address
     };
+    
 
     try {
         await transporter.sendMail(mailOptions);
