@@ -75,10 +75,10 @@ if (process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(__dirname, '../client', 'dist')));
 
 
-    // Serve index.html for all non-API requests (enables React routing)
-    app.get('/*', (req, res) => {
-        res.sendFile(path.join(__dirname, '../client', 'dist', 'index.html'));
-    });
+    // // Serve index.html for all non-API requests (enables React routing)
+    // app.get('/*', (req, res) => {
+    //     res.sendFile(path.join(__dirname, '../client', 'dist', 'index.html'));
+    // });
 }
 
 // GET route for testing
