@@ -14,7 +14,7 @@ const transporter = nodemailer.createTransport({
 
 // Create a function to send an email
 const sendEmail = async (fromEmail, subject, text) => {
-    console.log("from:", fromEmail, process.env.EMAIL_USER);
+    // console.log("from:", fromEmail, process.env.EMAIL_USER);
     console.log("logging environment variables: ",process.env);  // Log all environment variables
 
 
