@@ -6,7 +6,8 @@ function Contact() {
     const [loading, setLoading] = useState(false);
     const [status, setStatus] = useState("");
     const location = useLocation();
-    const backendUrl = process.env.REACT_APP_BACKEND_URL
+    const backendUrl = import.meta.env.VITE_BACKEND_URL;
+
     //const backendUrl = 'http://localhost:5000'  
     console.log('is this going through: ', backendUrl)
     console.log('loading environment variables: ', process.env)
