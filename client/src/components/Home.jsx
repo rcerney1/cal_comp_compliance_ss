@@ -11,7 +11,7 @@ function Home() {
     const location = useLocation();
 
     useEffect(() => {
-        window.scrollTo(0,0)
+        window.scrollTo(0, 0)
     }, [location]);
 
     return (
@@ -31,6 +31,13 @@ function Home() {
                     >
                         Introducing California Compliance Security Services
                     </h1>
+                    <p
+                        className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 max-w-5xl"
+                        data-aos="fade-up"
+                        data-aos-delay="200"
+                    >
+                        Leading provider in home automation, audio, video, and low voltage services.
+                    </p>
                     <p
                         className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 max-w-5xl"
                         data-aos="fade-up"
@@ -196,7 +203,7 @@ function Home() {
                 <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto">
                     Our team of experts is ready to provide you with reliable, discreet, and professional security solutions tailored to your needs. Let’s get started today!
                 </p>
-                <Link to ="/contact">
+                <Link to="/contact">
                     <a
                         href="#"
                         className="bg-[#e79c8b] hover:bg-[#d98978] text-white font-semibold px-8 py-3 rounded-md transition"
