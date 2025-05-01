@@ -72,13 +72,13 @@ app.post('/api/send-email', async (req, res) => {
 // Serve static files from the React app in production
 if (process.env.NODE_ENV === 'production') {
     // Serve static files from the React app's build folder
-    app.use(express.static(path.join(__dirname, '../client', 'dist')));
+    // app.use(express.static(path.join(__dirname, '../client', 'dist')));
 
 
     // Serve index.html for all non-API requests (enables React routing)
-    app.get('*', (req, res) => {
-        res.sendFile(path.join(__dirname, '../client', 'dist', 'index.html'));
-    });
+    // app.get('*', (req, res) => {
+    //     res.sendFile(path.join(__dirname, '../client', 'dist', 'index.html'));
+    // });
 }
 
 // GET route for testing
