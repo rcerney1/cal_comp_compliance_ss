@@ -14,32 +14,32 @@ require('dotenv').config();
 app.use(cors()); // Allow cross-origin requests
 app.use(bodyParser.json()); // Parse JSON bodies
 
-app.use(
-    helmet.contentSecurityPolicy({
-        directives: {
-            // Allow same-origin resources by default
-            defaultSrc: ["'none'"],
+// app.use(
+//     helmet.contentSecurityPolicy({
+//         directives: {
+//             // Allow same-origin resources by default
+//             defaultSrc: ["'none'"],
 
-            // Allow stylesheets from the same origin and Google Fonts
-            styleSrc: ["'self'", "https://fonts.googleapis.com"],
+//             // Allow stylesheets from the same origin and Google Fonts
+//             styleSrc: ["'self'", "https://fonts.googleapis.com"],
 
-            // Allow style elements from Google Fonts (this is the one that needs to be set)
-            styleSrcElem: ["'self'", "https://fonts.googleapis.com"],
+//             // Allow style elements from Google Fonts (this is the one that needs to be set)
+//             styleSrcElem: ["'self'", "https://fonts.googleapis.com"],
 
-            // Allow fonts from Google Fonts
-            fontSrc: ["'self'", "https://fonts.gstatic.com"],
+//             // Allow fonts from Google Fonts
+//             fontSrc: ["'self'", "https://fonts.gstatic.com"],
 
-            // Allow inline scripts and self for scripts
-            scriptSrc: ["'self'", "'unsafe-inline'"],
+//             // Allow inline scripts and self for scripts
+//             scriptSrc: ["'self'", "'unsafe-inline'"],
 
-            // Allow images from self, data URLs, and Cloudinary
-            imgSrc: ["'self'", "data:", "https://res.cloudinary.com"],
+//             // Allow images from self, data URLs, and Cloudinary
+//             imgSrc: ["'self'", "data:", "https://res.cloudinary.com"],
 
-            // Allow connections to self (AJAX, WebSockets)
-            connectSrc: ["'self'", "*"],
-        },
-    })
-);
+//             // Allow connections to self (AJAX, WebSockets)
+//             connectSrc: ["'self'", "*"],
+//         },
+//     })
+// );
 
 
 
