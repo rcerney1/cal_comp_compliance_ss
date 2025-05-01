@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import { FaPlug, FaWrench, FaLock, FaCamera, FaNetworkWired, FaBell } from "react-icons/fa"; // Icons for services
 import { useEffect } from "react";
 import { useLocation, Link } from "react-router-dom";
@@ -144,18 +145,7 @@ function Services() {
             </section>
 
             {/* Footer Section */}
-            <footer className="bg-gray-900 text-white py-12 px-6 text-center">
-                <div className="max-w-7xl mx-auto">
-                    <div className="mb-6">
-                        <a href="#services" className="text-gray-400 hover:text-white px-4">Services</a>
-                        <a href="#contact" className="text-gray-400 hover:text-white px-4">Contact</a>
-                        <a href="#about" className="text-gray-400 hover:text-white px-4">About</a>
-                    </div>
-                    <p className="text-sm text-gray-400">
-                        &copy; {new Date().getFullYear()} California Compliance Security Services. All rights reserved.
-                    </p>
-                </div>
-            </footer>
+            <Footer/>
         </div>
     );
 }

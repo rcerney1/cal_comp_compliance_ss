@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import heroImage from "../assets/hero.jpg";
 import section1Image from "../assets/default.jpeg";
 import section2Image from "../assets/default.jpeg";  // Tailored Security Solutions Image
@@ -115,21 +116,7 @@ function About() {
                 </a>
             </section>
 
-            <footer className="bg-gray-900 text-white py-12 px-6 text-center">
-                <div className="max-w-7xl mx-auto">
-                    {/* Quick Links */}
-                    <div className="mb-6">
-                        <a href="#services" className="text-gray-400 hover:text-white px-4">Services</a>
-                        <a href="#contact" className="text-gray-400 hover:text-white px-4">Contact</a>
-                        <a href="#about" className="text-gray-400 hover:text-white px-4">About</a>
-                    </div>
-
-                    {/* Copyright */}
-                    <p className="text-sm text-gray-400">
-                        &copy; {new Date().getFullYear()} California Compliance Security Services. All rights reserved.
-                    </p>
-                </div>
-            </footer>
+            <Footer />
         </div>
     );
 }
