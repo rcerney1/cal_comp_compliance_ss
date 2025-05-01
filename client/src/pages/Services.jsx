@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { FaPlug, FaWrench, FaLock, FaCamera, FaNetworkWired, FaBell } from "react-icons/fa"; // Icons for services
+import { FaPlug, FaWrench, FaLock, FaCamera, FaNetworkWired, FaBell, FaBroadcastTower } from "react-icons/fa"; // Icons for services
 import { useEffect } from "react";
 import { useLocation, Link } from "react-router-dom";
 
@@ -16,7 +16,7 @@ function Services() {
             <Navbar />
 
             {/* Hero Section */}
-           <section className="relative w-full h-screen">
+            <section className="relative w-full h-screen">
                 <img
                     src="#" // Update this with the actual image URL for the About page
                     alt="Security Service"
@@ -24,10 +24,10 @@ function Services() {
                 />
                 <div className="absolute inset-0 bg-black/40 flex flex-col items-start justify-end px-6 md:px-16 text-left pb-24 md:pb-40" data-aos="fade-up">
                     <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-4 max-w-5xl">
-                        Our Security Solution 
+                        Our Security Solution
                     </h1>
                     <p className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 max-w-5xl" data-aos="fade-up" data-aos-delay="100">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet scelerisque lectus, id tincidunt purus.
+                        Explore our full range of low voltage, security, and smart technology solutions designed to elevate and protect your home or business. From expert cabling to advanced automation, we deliver reliable systems built to last.
                     </p>
                     <p>picture will be added</p>
                 </div>
@@ -40,9 +40,11 @@ function Services() {
                     Overview of Our Services
                 </h2>
                 <p className="text-lg md:text-xl text-gray-700 max-w-4xl mx-auto mb-12 leading-relaxed">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur venenatis, lectus sit amet ultrices
-                    scelerisque, sapien erat feugiat libero, sed varius justo neque id sapien. Integer euismod dui non augue
-                    luctus, eu auctor metus varius. Aenean sed dui ut sapien malesuada sollicitudin.
+                    At California Compliance Security Services, we provide comprehensive low voltage solutions including
+                    industry-leading security, data, and audio/visual systems. Whether you're looking to outfit your property
+                    with premium surveillance or simply purchase state-of-the-art equipment, our team is here to support both
+                    full-service installations and standalone product sales. All pricing is discussed during a personalized
+                    walkthrough with our expert design team to ensure each solution is tailored to your unique space and needs.
                 </p>
             </section>
 
@@ -56,23 +58,25 @@ function Services() {
                         </div>
                         <h3 className="text-2xl font-semibold mb-4">Data & Voice Cabling</h3>
                         <p className="text-lg text-gray-700 mb-4">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur venenatis, lectus sit amet ultrices
-                            scelerisque, sapien erat feugiat libero. Sed varius justo neque id sapien. Integer euismod dui non augue
-                            luctus.
+                            Precision-installed cabling systems supporting both voice and data transmission, designed for optimal
+                            signal integrity, bandwidth efficiency, and long-term performance in both residential and commercial
+                            environments
                         </p>
                         <p className="text-xl text-gray-800">~$300 - pricing may vary</p>
                     </div>
 
-                    {/* Service 2: Fiber Optic Cabling */}
+                    {/* Service 2: Automation Solutions */}
                     <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow">
                         <div className="flex items-center justify-center mb-4">
                             <FaWrench className="text-5xl text-[#e79c8b]" />
                         </div>
-                        <h3 className="text-2xl font-semibold mb-4">Fiber Optic Cabling</h3>
+                        <h3 className="text-2xl font-semibold mb-4">Automation Solutions</h3>
                         <p className="text-lg text-gray-700 mb-4">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur venenatis, lectus sit amet ultrices
-                            scelerisque, sapien erat feugiat libero. Sed varius justo neque id sapien. Integer euismod dui non augue
-                            luctus.
+                            Our automation solutions integrate cutting-edge control systems for lighting, climate, shading, and
+                            audio/visual environments to create streamlined, user-friendly spaces. We offer industry-leading equipment
+                            sourced from trusted manufacturers, available for both purchase and professional installation. Our systems
+                            are tailored to client specifications and configured by our design team for seamless functionality and
+                            long-term reliability.
                         </p>
                         <p className="text-xl text-gray-800">$400</p>
                     </div>
@@ -84,9 +88,9 @@ function Services() {
                         </div>
                         <h3 className="text-2xl font-semibold mb-4">Surveillance Systems</h3>
                         <p className="text-lg text-gray-700 mb-4">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur venenatis, lectus sit amet ultrices
-                            scelerisque, sapien erat feugiat libero. Sed varius justo neque id sapien. Integer euismod dui non augue
-                            luctus.
+                            High-definition camera systems with remote monitoring capabilities, motion detection, and secure cloud
+                            or on-site storage—engineered to provide comprehensive visibility and peace of mind for properties of any
+                            scale.
                         </p>
                         <p className="text-xl text-gray-800">$500</p>
                     </div>
@@ -98,9 +102,11 @@ function Services() {
                         </div>
                         <h3 className="text-2xl font-semibold mb-4">Entry Systems</h3>
                         <p className="text-lg text-gray-700 mb-4">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur venenatis, lectus sit amet ultrices
-                            scelerisque, sapien erat feugiat libero. Sed varius justo neque id sapien. Integer euismod dui non augue
-                            luctus.
+                            We design and install secure entry systems that incorporate keypads, card readers, intercoms,
+                            and remote access controls to regulate building access with precision. Our solutions are scalable for
+                            both residential and commercial environments and integrate smoothly with existing security infrastructure.
+                            Clients can choose from a curated selection of high-quality access equipment, with or without
+                            installation, depending on their needs.
                         </p>
                         <p className="text-xl text-gray-800">$350</p>
                     </div>
@@ -112,9 +118,10 @@ function Services() {
                         </div>
                         <h3 className="text-2xl font-semibold mb-4">Nurse Call Stations</h3>
                         <p className="text-lg text-gray-700 mb-4">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur venenatis, lectus sit amet ultrices
-                            scelerisque, sapien erat feugiat libero. Sed varius justo neque id sapien. Integer euismod dui non augue
-                            luctus.
+                            Our nurse call systems are engineered to provide fast, reliable communication between patients and
+                            caregivers in healthcare and assisted living environments. We offer a range of industry-compliant solutions
+                            that support staff efficiency, patient safety, and regulatory standards. Systems can be purchased independently
+                            or paired with professional installation for seamless integration into existing infrastructure.
                         </p>
                         <p className="text-xl text-gray-800">$300</p>
                     </div>
@@ -126,12 +133,29 @@ function Services() {
                         </div>
                         <h3 className="text-2xl font-semibold mb-4">Data & Voice Solutions</h3>
                         <p className="text-lg text-gray-700 mb-4">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur venenatis, lectus sit amet ultrices
-                            scelerisque, sapien erat feugiat libero. Sed varius justo neque id sapien. Integer euismod dui non augue
-                            luctus.
+                            We provide comprehensive data and voice solutions designed to support robust communication networks in
+                            residential and commercial environments. Our systems ensure clear voice transmission and high-speed data
+                            connectivity, built with structured cabling that adheres to current industry standards. Equipment is
+                            available for purchase with optional expert installation tailored to your infrastructure needs.
                         </p>
                         <p className="text-xl text-gray-800">$350</p>
                     </div>
+
+                    {/* Service 7: Audio 70 Volt Broadcast Systems */}
+                    <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                        <div className="flex items-center justify-center mb-4">
+                            <FaBroadcastTower className="text-5xl text-[#e79c8b]" />
+                        </div>
+                        <h3 className="text-2xl font-semibold mb-4">Audio 70 Volt Broadcast Systems</h3>
+                        <p className="text-lg text-gray-700 mb-4">
+                            Our 70-volt audio broadcast systems deliver uniform sound distribution across expansive commercial spaces
+                            such as warehouses, offices, and retail environments. These scalable systems support multiple speaker zones
+                            and centralized control, making them ideal for announcements and background audio. Equipment is available for
+                            direct purchase or as part of a full-service professional installation.
+                        </p>
+                        <p className="text-xl text-gray-800">Custom Quote Upon Walkthrough</p>
+                    </div>
+
                 </div>
 
                 {/* Final CTA Section */}
@@ -145,7 +169,7 @@ function Services() {
             </section>
 
             {/* Footer Section */}
-            <Footer/>
+            <Footer />
         </div>
     );
 }
