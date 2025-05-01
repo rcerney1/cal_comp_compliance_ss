@@ -31,19 +31,19 @@ function Home() {
                     >
                         Introducing California Compliance Security Services
                     </h1>
-                    {/* <p
+                    <p
                         className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 max-w-5xl"
                         data-aos="fade-up"
                         data-aos-delay="200"
                     >
                         Leading provider in home automation, audio, video, and low voltage services.
-                    </p> */}
+                    </p>
                     <p
                         className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 max-w-5xl"
                         data-aos="fade-up"
                         data-aos-delay="100"
                     >
-                        Your trusted partner in providing discreet, reliable, and custom security solutions for premium homes and businesses. Leading provider in home automation, audio, video, and low voltage services.
+                        Your trusted partner in providing discreet, reliable, and custom security solutions for premium homes and businesses.
                     </p>
                 </div>
             </section>
@@ -121,17 +121,18 @@ function Home() {
                         <p className="text-sm text-gray-500">Services: <strong>Both Sales & Installation</strong></p>
                     </div>
 
-                    {/* Service 2: Fiber Optic Cabling */}
+                    {/* Service 2: Automation Solutions */}
                     <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow">
                         <div className="flex items-center justify-center mb-4">
-                            <i className="fas fa-network-wired text-4xl text-[#e79c8b]"></i>
+                            <i className="fas fa-cogs text-4xl text-[#e79c8b]"></i>
                         </div>
-                        <h3 className="text-2xl font-semibold mb-4">Fiber Optic Cabling</h3>
+                        <h3 className="text-2xl font-semibold mb-4">Automation Solutions</h3>
                         <p className="text-lg text-gray-700 mb-4">
-                            Fast and reliable fiber optic installation for high-speed data transfer.
+                            Streamline your home or business with reliable, industry-leading automation systems that put you in control.
                         </p>
-                        <p className="text-sm text-gray-500">Services: <strong>Both Sales & Installation</strong></p>
+                        <p className="text-sm text-gray-500">Services: <strong>Installation</strong></p>
                     </div>
+
 
                     {/* Service 3: Audio/Video Cabling */}
                     <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow">
