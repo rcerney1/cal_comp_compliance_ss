@@ -22,11 +22,11 @@ const sendEmail = async (fromEmail, subject, text) => {
     
     
     const mailOptions = {
-        from: process.env.EMAIL_USER,        // always your verified domain email
-        to: process.env.EMAIL_USER,          // or wherever you want to receive it
-        subject,                             // subject from the form
-        text,                                // the message content
-        replyTo: fromEmail,                  // ← allows you to click "Reply" and it goes to the user's address
+        from: process.env.EMAIL_USER,        
+        to: process.env.EMAIL_USER,          
+        subject,                             
+        text,                                
+        replyTo: fromEmail,                  
     };
     
 
