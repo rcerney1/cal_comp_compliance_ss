@@ -2,6 +2,7 @@ import Navbar from "./Navbar";
 import heroImage from "../assets/hero.jpg";
 import section1Image from "../assets/section1.jpg";
 import elegantHome from "../assets/elegant_home_2.jpg"
+import Footer from "./Footer";
 import sophisticated from "../assets/sophisticated.jpg"
 import { Link, useLocation } from "react-router-dom";
 import { useEffect } from "react";
@@ -207,22 +208,7 @@ function Home() {
 
 
             {/* Footer Section */}
-            <footer className="bg-gray-900 text-white py-12 px-6 text-center">
-                <div className="max-w-7xl mx-auto">
-                    {/* Quick Links */}
-                    <div className="mb-6">
-                        <a href="#services" className="text-gray-400 hover:text-white px-4">Services</a>
-                        <a href="#contact" className="text-gray-400 hover:text-white px-4">Contact</a>
-                        <a href="#about" className="text-gray-400 hover:text-white px-4">About</a>
-                    </div>
-
-
-                    {/* Copyright */}
-                    <p className="text-sm text-gray-400">
-                        &copy; {new Date().getFullYear()} California Compliance Security Services. All rights reserved.
-                    </p>
-                </div>
-            </footer>
+            <Footer />
 
 
 
