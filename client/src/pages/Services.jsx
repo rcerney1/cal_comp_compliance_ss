@@ -62,7 +62,6 @@ function Services() {
                             signal integrity, bandwidth efficiency, and long-term performance in both residential and commercial
                             environments
                         </p>
-                        <p className="text-xl text-gray-800">~$300 - pricing may vary</p>
                     </div>
 
                     {/* Service 2: Automation Solutions */}
@@ -78,7 +77,6 @@ function Services() {
                             are tailored to client specifications and configured by our design team for seamless functionality and
                             long-term reliability.
                         </p>
-                        <p className="text-xl text-gray-800">$400</p>
                     </div>
 
                     {/* Service 3: Surveillance Systems */}
@@ -92,7 +90,6 @@ function Services() {
                             or on-site storage—engineered to provide comprehensive visibility and peace of mind for properties of any
                             scale.
                         </p>
-                        <p className="text-xl text-gray-800">$500</p>
                     </div>
 
                     {/* Service 4: Entry Systems */}
@@ -108,7 +105,6 @@ function Services() {
                             Clients can choose from a curated selection of high-quality access equipment, with or without
                             installation, depending on their needs.
                         </p>
-                        <p className="text-xl text-gray-800">$350</p>
                     </div>
 
                     {/* Service 5: Nurse Call Stations */}
@@ -123,7 +119,6 @@ function Services() {
                             that support staff efficiency, patient safety, and regulatory standards. Systems can be purchased independently
                             or paired with professional installation for seamless integration into existing infrastructure.
                         </p>
-                        <p className="text-xl text-gray-800">$300</p>
                     </div>
 
                     {/* Service 6: Data & Voice Solutions */}
@@ -138,22 +133,22 @@ function Services() {
                             connectivity, built with structured cabling that adheres to current industry standards. Equipment is
                             available for purchase with optional expert installation tailored to your infrastructure needs.
                         </p>
-                        <p className="text-xl text-gray-800">$350</p>
                     </div>
 
                     {/* Service 7: Audio 70 Volt Broadcast Systems */}
-                    <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow">
-                        <div className="flex items-center justify-center mb-4">
-                            <FaBroadcastTower className="text-5xl text-[#e79c8b]" />
+                    <div className="col-span-full flex justify-center">
+                        <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                            <div className="flex items-center justify-center mb-4">
+                                <FaBroadcastTower className="text-5xl text-[#e79c8b]" />
+                            </div>
+                            <h3 className="text-2xl font-semibold mb-4">Audio 70 Volt Broadcast Systems</h3>
+                            <p className="text-lg text-gray-700 mb-4">
+                                Our 70-volt audio broadcast systems deliver uniform sound distribution across expansive commercial spaces
+                                such as warehouses, offices, and retail environments. These scalable systems support multiple speaker zones
+                                and centralized control, making them ideal for announcements and background audio. Equipment is available for
+                                direct purchase or as part of a full-service professional installation.
+                            </p>
                         </div>
-                        <h3 className="text-2xl font-semibold mb-4">Audio 70 Volt Broadcast Systems</h3>
-                        <p className="text-lg text-gray-700 mb-4">
-                            Our 70-volt audio broadcast systems deliver uniform sound distribution across expansive commercial spaces
-                            such as warehouses, offices, and retail environments. These scalable systems support multiple speaker zones
-                            and centralized control, making them ideal for announcements and background audio. Equipment is available for
-                            direct purchase or as part of a full-service professional installation.
-                        </p>
-                        <p className="text-xl text-gray-800">Custom Quote Upon Walkthrough</p>
                     </div>
 
                 </div>
