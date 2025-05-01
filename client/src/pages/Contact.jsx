@@ -9,7 +9,7 @@ function Contact() {
     const backendUrl = process.env.REACT_APP_BACKEND_URL
     //const backendUrl = 'http://localhost:5000'  
     console.log('is this going through: ', backendUrl)
-    console.log('loading environment variables: ', process.env.NODE_ENV)
+    console.log('loading environment variables: ', process.env.NODE_ENV, process.env.REACT_APP_BACKEND_URL)
 
     useEffect(() => {
         window.scrollTo(0, 0)
