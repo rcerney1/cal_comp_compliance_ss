@@ -30,7 +30,7 @@ function About() {
                         Your Trusted Partner in Security Solutions
                     </h1>
                     <p className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 max-w-5xl" data-aos="fade-up" data-aos-delay="100">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet scelerisque lectus, id tincidunt purus.
+                    Bringing smart security and A/V solutions to homes and businesses across California — with professionalism you can trust and service you can count on.
                     </p>
                     <p>picture will be added</p>
                 </div>
@@ -42,7 +42,7 @@ function About() {
                     Our Expertise
                 </h2>
                 <p className="text-lg md:text-xl text-gray-700 max-w-4xl mb-12 leading-relaxed">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur venenatis, lectus sit amet ultrices scelerisque, sapien erat feugiat libero. Sed varius justo neque id sapien. Integer euismod dui non augue luctus. Pellentesque ut tristique justo. Nulla facilisi. Sed viverra non sapien ut tincidunt. Ut vestibulum ac erat at suscipit.
+                At California Compliance Security Services, we bring together years of experience and a broad range of technical expertise to deliver comprehensive low voltage solutions. From cutting-edge surveillance systems and access control to home automation, audio/video, and data cabling — our team is equipped to handle projects of all sizes with precision and care. Whether you’re upgrading a commercial property or enhancing your home’s infrastructure, we provide the tools and knowledge to keep your environment connected, secure, and efficient.
                 </p>
                 <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
                     <div>
