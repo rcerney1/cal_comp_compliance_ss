@@ -19,7 +19,7 @@ function About() {
     return (
         <div className="text-gray-900 bg-white font-sans">
             <Navbar />
-            {/* Helmet for SEO */}
+            {/* Helmet for SEO titles and meta tags*/}
             <Helmet>
                 <title>About Us | California Compliance Security Services</title>
                 <meta
