@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import heroImage from "../assets/hero.jpg";
+import heroImage from "../assets/about_hero.jpg";
 import section1Image from "../assets/default.jpeg";
 import section2Image from "../assets/default.jpeg";  // Tailored Security Solutions Image
 import approachImage from "../assets/default.jpeg"; // Our Approach Image
@@ -33,7 +33,7 @@ function About() {
             {/* Hero Section */}
             <section className="relative w-full h-screen">
                 <img
-                    src="#" // Update this with the actual image URL for the About page
+                    src={heroImage}// Update this with the actual image URL for the About page
                     alt="Security Service"
                     className="absolute inset-0 w-full h-full object-cover object-center"
                 />

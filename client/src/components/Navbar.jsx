@@ -36,7 +36,7 @@ function Navbar() {
                         CCSS {/* Logo links to Home */}
                     </Link>
 
-                    <nav className="hidden md:flex space-x-8 text-base font-medium">
+                    <nav className="hidden md:flex space-x-8 text-base font-medium" aria-label="Main navigation">
                         {/* Use Link instead of a tag */}
                         <Link
                             to="/about"
@@ -78,6 +78,8 @@ function Navbar() {
                     className={`md:hidden ml-auto ${scrolled ? "text-gray-900 dark:text-white" : (isContactPage ? "text-black" : "text-white")}`}
                     onClick={() => setMenuOpen(!menuOpen)}
                     aria-label="Toggle menu"
+                    aria-expanded={menuOpen}
+                    aria-controls="mobile-nav"
                 >
                     {menuOpen ? <X size={24} /> : <Menu size={24} />}
                 </button>
@@ -86,7 +88,7 @@ function Navbar() {
             {/* Mobile Nav Dropdown */}
             {menuOpen && (
                 <div className="md:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700">
-                    <nav className="flex flex-col items-center space-y-4 py-4">
+                    <nav className="flex flex-col items-center space-y-4 py-4" aria-label="Mobile menu" id="mobile-nav">
                         {/* Use Link instead of a tag */}
                         <Link
                             to="/about"
