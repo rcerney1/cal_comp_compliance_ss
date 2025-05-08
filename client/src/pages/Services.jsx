@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Hero from "../assets/services_hero.jpg"
 import { FaPlug, FaWrench, FaLock, FaCamera, FaNetworkWired, FaBell, FaBroadcastTower } from "react-icons/fa"; // Icons for services
 import { useEffect } from "react";
 import { useLocation, Link } from "react-router-dom";
@@ -32,7 +33,7 @@ function Services() {
             {/* Hero Section */}
             <section className="relative w-full h-screen">
                 <img
-                    src="#" // Update this with the actual image URL for the About page
+                    src={Hero} // Update this with the actual image URL for the About page
                     alt="Security Service"
                     className="absolute inset-0 w-full h-full object-cover object-center"
                 />
