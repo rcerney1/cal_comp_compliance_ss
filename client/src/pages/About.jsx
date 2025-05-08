@@ -33,10 +33,11 @@ function About() {
             {/* Hero Section */}
             <section className="relative w-full h-screen">
                 <img
-                    src={heroImage}// Update this with the actual image URL for the About page
+                    src={heroImage}
                     alt="Security Service"
-                    className="absolute inset-0 w-full h-full object-cover object-[center_top] md:object-center"
+                    className="absolute inset-0 w-full h-full object-contain md:object-cover"
                 />
+
                 <div className="absolute inset-0 bg-black/40 flex flex-col items-start justify-end px-6 md:px-16 text-left pb-24 md:pb-40" data-aos="fade-up">
                     <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-4 max-w-5xl">
                         Your Trusted Partner in Security Solutions
@@ -78,13 +79,13 @@ function About() {
             <section className="bg-white text-gray-900 min-h-screen flex flex-col justify-center px-6 md:px-16 py-24" data-aos="fade-up" data-aos-delay="300">
                 <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
                     <div className="order-1 md:order-2">
-                        
-                            <img
-                                src={section2Image}
-                                alt="Tailored Solutions"
-                                className="w-full h-auto rounded-lg shadow-md"
-                            />
-                        
+
+                        <img
+                            src={section2Image}
+                            alt="Tailored Solutions"
+                            className="w-full h-auto rounded-lg shadow-md"
+                        />
+
                     </div>
                     <div className="order-2 md:order-1">
                         <h3 className="text-4xl md:text-5xl font-bold mb-6">
