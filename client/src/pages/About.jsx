@@ -4,6 +4,7 @@ import heroImage from "../assets/about_hero.jpg";
 import section1Image from "../assets/about_section_1.jpg";
 import section2Image from "../assets/smart_home.jpg";  // Tailored Security Solutions Image
 import approachImage from "../assets/client_discussion.jpg"; // Our Approach Image
+import heroImageMobile from "../assets/about_hero_mobile.jpg"
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
@@ -32,11 +33,14 @@ function About() {
 
             {/* Hero Section */}
             <section className="relative w-full h-screen">
-                <img
-                    src={heroImage}
-                    alt="Security Service"
-                    className="absolute inset-0 w-full h-full object-contain md:object-cover"
-                />
+                <picture>
+                    <source media="(min-width: 768px)" srcSet={heroImage} />
+                    <img
+                        src={heroImageMobile}
+                        alt="Security Service"
+                        className="absolute inset-0 w-full h-full object-cover object-center"
+                    />
+                </picture>
 
                 <div className="absolute inset-0 bg-black/40 flex flex-col items-start justify-end px-6 md:px-16 text-left pb-24 md:pb-40" data-aos="fade-up">
                     <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-4 max-w-5xl">
@@ -47,6 +51,7 @@ function About() {
                     </p>
                 </div>
             </section>
+
 
             {/* Our Expertise Section */}
             <section className="w-full min-h-screen flex flex-col items-center justify-center px-6 md:px-16 py-24 text-center bg-gray-50" data-aos="fade-up" data-aos-delay="200">
