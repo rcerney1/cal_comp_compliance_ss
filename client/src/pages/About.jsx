@@ -57,11 +57,13 @@ function About() {
                 </p>
                 <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
                     <div>
-                        <img
-                            src={section1Image}
-                            alt="Technician at work"
-                            className="w-full h-auto rounded-lg shadow-md"
-                        />
+                        <div className="aspect-[4/3] w-full overflow-hidden rounded-lg shadow-md">
+                            <img
+                                src={section1Image}
+                                alt="Technician at work"
+                                className="w-full h-auto rounded-lg shadow-md"
+                            />
+                        </div>
                     </div>
                     <div>
                         <h3 className="text-4xl md:text-5xl font-bold mb-6">Professional Staff</h3>
@@ -76,11 +78,13 @@ function About() {
             <section className="bg-white text-gray-900 min-h-screen flex flex-col justify-center px-6 md:px-16 py-24" data-aos="fade-up" data-aos-delay="300">
                 <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
                     <div className="order-1 md:order-2">
-                        <img
-                            src={section2Image}
-                            alt="Tailored Solutions"
-                            className="w-full h-auto rounded-lg shadow-md"
-                        />
+                        <div className="aspect-[4/3] w-full overflow-hidden rounded-lg shadow-md">
+                            <img
+                                src={section2Image}
+                                alt="Tailored Solutions"
+                                className="w-full h-auto rounded-lg shadow-md"
+                            />
+                        </div>
                     </div>
                     <div className="order-2 md:order-1">
                         <h3 className="text-4xl md:text-5xl font-bold mb-6">
@@ -97,11 +101,13 @@ function About() {
             <section className="bg-gray-50 text-gray-900 py-24 px-6 md:px-16" data-aos="fade-up" data-aos-delay="400">
                 <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
                     <div>
-                        <img
-                            src={approachImage}
-                            alt="Our Approach"
-                            className="w-full h-auto rounded-lg shadow-md"
-                        />
+                        <div className="aspect-[4/3] w-full overflow-hidden rounded-lg shadow-md">
+                            <img
+                                src={approachImage}
+                                alt="Our Approach"
+                                className="w-full h-auto rounded-lg shadow-md"
+                            />
+                        </div>
                     </div>
                     <div>
                         <h3 className="text-4xl md:text-5xl font-bold mb-6">
