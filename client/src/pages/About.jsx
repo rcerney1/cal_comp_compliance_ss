@@ -1,9 +1,9 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import heroImage from "../assets/about_hero.jpg";
-import section1Image from "../assets/default.jpeg";
-import section2Image from "../assets/default.jpeg";  // Tailored Security Solutions Image
-import approachImage from "../assets/default.jpeg"; // Our Approach Image
+import section1Image from "../assets/about_section_1.jpg";
+import section2Image from "../assets/smart_home.jpg";  // Tailored Security Solutions Image
+import approachImage from "../assets/client_discussion.jpg"; // Our Approach Image
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
@@ -44,7 +44,6 @@ function About() {
                     <p className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 max-w-5xl" data-aos="fade-up" data-aos-delay="100">
                         Bringing smart security and A/V solutions to homes and businesses across California — with professionalism you can trust and service you can count on.
                     </p>
-                    <p>picture will be added</p>
                 </div>
             </section>
 
