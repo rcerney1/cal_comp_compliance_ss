@@ -44,7 +44,6 @@ function Services() {
                     <p className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 max-w-5xl" data-aos="fade-up" data-aos-delay="100">
                         Explore our full range of low voltage, security, and smart technology solutions designed to elevate and protect your home or business. From expert cabling to advanced automation, we deliver reliable systems built to last.
                     </p>
-                    <p>picture will be added</p>
                 </div>
             </section>
 
