@@ -35,7 +35,7 @@ function About() {
                 <img
                     src={heroImage}// Update this with the actual image URL for the About page
                     alt="Security Service"
-                    className="absolute inset-0 w-full h-full object-cover object-center"
+                    className="absolute inset-0 w-full h-full object-cover object-[center_top] md:object-center"
                 />
                 <div className="absolute inset-0 bg-black/40 flex flex-col items-start justify-end px-6 md:px-16 text-left pb-24 md:pb-40" data-aos="fade-up">
                     <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-4 max-w-5xl">
