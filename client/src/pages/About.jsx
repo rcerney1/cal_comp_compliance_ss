@@ -4,7 +4,7 @@ import heroImage from "../assets/about_hero.jpg";
 import section1Image from "../assets/about_section_1.jpg";
 import section2Image from "../assets/smart_home.jpg";  // Tailored Security Solutions Image
 import approachImage from "../assets/client_discussion.jpg"; // Our Approach Image
-import heroImageMobile from "../assets/about_hero_mobile.jpg"
+import heroImageMobile from "../assets/about_hero_2.jpg"
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
