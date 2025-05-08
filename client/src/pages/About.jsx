@@ -6,7 +6,7 @@ import section2Image from "../assets/smart_home.jpg";  // Tailored Security Solu
 import approachImage from "../assets/client_discussion.jpg"; // Our Approach Image
 import heroImageMobile from "../assets/about_hero_4.jpg"
 import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 
 function About() {
@@ -132,9 +132,11 @@ function About() {
                 <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto">
                     Get in touch with our team to discuss your security needs and get started today!
                 </p>
-                <a href="#contact" className="bg-[#e79c8b] hover:bg-[#d98978] text-white font-semibold px-8 py-3 rounded-md transition">
-                    Contact Us
-                </a>
+                <Link to="/contact">
+                    <a href="#contact" className="bg-[#e79c8b] hover:bg-[#d98978] text-white font-semibold px-8 py-3 rounded-md transition">
+                        Contact Us
+                    </a>
+                </Link>
             </section>
 
             <Footer />
