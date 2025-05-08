@@ -91,9 +91,9 @@ function Contact() {
                     {/* Contact Information */}
                     <div className="text-left space-y-4 mb-12 md:mb-0">
                         <h3 className="text-xl font-semibold">Contact Information</h3>
-                        <p>Email: <a href="mailto:email@example.com" className="text-[#e79c8b]">email@example.com</a></p>
-                        <p>Phone: <span className="text-[#e79c8b]">(555) 555-5555</span></p>
-                        <p>Address: 123 Demo Street, New York, NY 12345</p>
+                        <p>Email: <a href="mailto:email@example.com" className="text-[#e79c8b]">dccworks@gmail.com</a></p>
+                        <p>Phone: <span className="text-[#e79c8b]">(650)592-2624</span></p>
+                        
                     </div>
 
                     {/* Contact Form */}
