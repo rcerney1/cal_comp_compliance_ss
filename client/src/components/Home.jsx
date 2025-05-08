@@ -24,7 +24,7 @@ function Home() {
                     name="description"
                     content="CCSS offers reliable security, audio/visual, and automation systems for homes and businesses. Expert installations and high-quality equipment tailored to your needs."
                 />
-                <meta name="keywords" content="low voltage, security systems, home automation, surveillance, data cabling, CCSS, California Compliance Security, testing" />
+                <meta name="keywords" content="low voltage, security systems, home automation, surveillance, data cabling, CCSS, California Compliance Security" />
                 <meta name="author" content="California Compliance Security Services" />
             </Helmet>
 
