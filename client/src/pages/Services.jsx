@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import { FaPlug, FaWrench, FaLock, FaCamera, FaNetworkWired, FaBell, FaBroadcastTower } from "react-icons/fa"; // Icons for services
 import { useEffect } from "react";
 import { useLocation, Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 function Services() {
     const location = useLocation();
@@ -14,6 +15,19 @@ function Services() {
     return (
         <div className="text-gray-900 bg-white font-sans">
             <Navbar />
+            {/* Helmet for title and meta tags */}
+            <Helmet>
+                <title>Our Services | California Compliance Security Services</title>
+                <meta
+                    name="description"
+                    content="Explore our full range of professional low voltage, audio/visual, and automation services. From data cabling to entry systems, CCSS provides expert installations and equipment sales tailored to your property."
+                />
+                <meta
+                    name="keywords"
+                    content="low voltage services, security installations, audio video systems, data cabling, surveillance, access control, nurse call systems, automation solutions, CCSS services"
+                />
+                <meta name="author" content="California Compliance Security Services" />
+            </Helmet>
 
             {/* Hero Section */}
             <section className="relative w-full h-screen">
