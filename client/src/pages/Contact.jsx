@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
-import Navbar from "../components/Navbar"; 
+import Navbar from "../components/Navbar";
 import Footer from '../components/Footer';
 import { useLocation } from "react-router-dom";
+import { Helmet } from 'react-helmet-async';
 
 function Contact() {
     const [loading, setLoading] = useState(false);
@@ -65,6 +66,19 @@ function Contact() {
     return (
         <div className="text-gray-900 bg-white font-sans">
             <Navbar />
+            {/* Helmet for title and meta tags */}
+            <Helmet>
+                <title>Contact Us | California Compliance Security Services</title>
+                <meta
+                    name="description"
+                    content="Get in touch with California Compliance Security Services to schedule a consultation or request more information about our custom low voltage and security solutions."
+                />
+                <meta
+                    name="keywords"
+                    content="contact CCSS, security consultation, low voltage inquiry, California Compliance Security contact, schedule installation, request quote"
+                />
+                <meta name="author" content="California Compliance Security Services" />
+            </Helmet>
 
             {/* Contact Form Section */}
             <section className="min-h-screen py-12 px-6 text-center bg-gray-50 mt-24"> {/* Adjusted to min-h-screen for better mobile fit */}
