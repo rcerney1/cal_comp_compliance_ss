@@ -102,6 +102,7 @@ function Gallery() {
                         ))}
                     </div>
                 </div>
+                {/* comment for heroku */}
             </section>
 
             <Footer />
