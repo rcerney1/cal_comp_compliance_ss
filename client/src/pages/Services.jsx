@@ -167,17 +167,40 @@ function Services() {
 
 
                 </div>
-
-                {/* Final CTA Section */}
-                <div className="text-center mt-12">
-                    <Link to="/contact">
-                        <a href="#contact" className="bg-[#e79c8b] hover:bg-[#d98978] text-white font-semibold px-8 py-3 rounded-md transition">
-                            Book a Consultation
-                        </a>
-                    </Link>
-                </div>
             </section>
 
+            {/* CTA Section */}
+            <section className="relative bg-[#1a1a1a] text-white py-20 px-6 md:px-16 overflow-hidden">
+                {/* Background Image */}
+                <div className="absolute inset-0 z-0">
+                    <img
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic3.jpg"
+                        alt="mechanic"
+                        className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-black opacity-80"></div>
+                </div>
+
+                {/* CTA Content */}
+                <div className="relative z-10 max-w-6xl mx-auto flex flex-col items-center text-center gap-10">
+                    <div className="max-w-3xl">
+                        <span className="text-[#e79c8b] uppercase tracking-widest font-semibold text-sm md:text-base block mb-2">
+                            Get Our Services
+                        </span>
+                        <h2 className="text-3xl md:text-5xl font-bold leading-tight">
+                            Let’s Get You Back On The Road Faster. Schedule Now!
+                        </h2>
+                    </div>
+
+                    <div className="flex flex-wrap justify-center gap-4">
+                        <Link to="/contact">
+                            <span className="inline-block bg-[#e79c8b] hover:bg-[#d98978] text-white font-bold py-3 px-6 rounded-md transition-all">
+                                Schedule Our Services
+                            </span>
+                        </Link>
+                    </div>
+                </div>
+            </section>
             {/* Footer Section */}
             <Footer />
         </div>

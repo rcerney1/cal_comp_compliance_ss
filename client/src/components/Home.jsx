@@ -10,6 +10,7 @@ import { Helmet } from "react-helmet-async";
 
 function Home() {
     const location = useLocation();
+    console.log('test')
 
     useEffect(() => {
         window.scrollTo(0, 0)
