@@ -4,15 +4,15 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 // Importing local images
-import proj1Img1 from "../assets/test.jpg";
-import proj1Img2 from "../assets/projects/project_1/img2.jpg";
-import proj1Img3 from "../assets/projects/project_1/img3.jpg";
-import proj2Img1 from "../assets/projects/project_2/img1.jpg";
-import proj2Img2 from "../assets/projects/project_2/img2.jpg";
-import proj2Img3 from "../assets/projects/project_2/img3.jpg";
-import proj3Img1 from "../assets/projects/project_3/img1.jpg";
-import proj3Img2 from "../assets/projects/project_3/img2.jpg";
-import proj3Img3 from "../assets/projects/project_3/img3.jpg";
+import proj1Img1 from "../assets/proj1_1.jpg";
+import proj1Img2 from "../assets/proj1_2.jpg";
+import proj1Img3 from "../assets/proj1_3.jpg";
+import proj2Img1 from "../assets/proj2_1.jpg";
+import proj2Img2 from "../assets/proj2_2.jpg";
+import proj2Img3 from "../assets/proj2_3.jpg";
+import proj3Img1 from "../assets/proj3_1.jpg";
+import proj3Img2 from "../assets/proj3_2.jpg";
+import proj3Img3 from "../assets/proj3_3.jpg";
 
 const categories = [
     { label: "All", value: "all" },
