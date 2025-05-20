@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet-async";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-// Importing local images
 import proj1Img1 from "../assets/proj1_1.jpg";
 import proj1Img2 from "../assets/proj1_2.jpg";
 import proj1Img3 from "../assets/proj1_3.jpg";
@@ -35,7 +34,6 @@ const allImages = [
 
 function Gallery() {
     const [filter, setFilter] = useState("all");
-    console.log('test')
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -84,7 +82,7 @@ function Gallery() {
                             <a
                                 key={`${filter}-${i}`}
                                 href="#"
-                                className="relative overflow-hidden group h-80 transition-all duration-500 ease-out opacity-0 translate-y-4 animate-[fadeIn_0.5s_forwards]"
+                                className="relative overflow-hidden group h-80"
                             >
                                 <img
                                     src={src}
@@ -103,7 +101,6 @@ function Gallery() {
                         ))}
                     </div>
                 </div>
-                {/* comment for heroku */}
             </section>
 
             <Footer />
