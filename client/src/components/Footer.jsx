@@ -9,6 +9,7 @@ function Footer() {
                     <Link to='/' className="text-gray-400 hover:text-white px-4">Home</Link>
                     <Link to="/services" className="text-gray-400 hover:text-white px-4">Services</Link>
                     <Link to="/about" className="text-gray-400 hover:text-white px-4">About</Link>
+                    <Link to="/projects" className="text-gray-400 hover:text-white px-4">Our Projects</Link>
                     <Link to="/contact" className="text-gray-400 hover:text-white px-4">Contact</Link>
                 </div>
 
