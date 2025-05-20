@@ -5,6 +5,7 @@ import { FaPlug, FaWrench, FaLock, FaCamera, FaNetworkWired, FaBell, FaBroadcast
 import { useEffect } from "react";
 import { useLocation, Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import theater from "../assets/theater.jpg"
 
 function Services() {
     const location = useLocation();
@@ -174,7 +175,7 @@ function Services() {
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic3.jpg"
+                        src={theater}
                         alt="mechanic"
                         className="w-full h-full object-cover"
                     />
