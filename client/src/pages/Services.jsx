@@ -5,7 +5,7 @@ import { FaPlug, FaWrench, FaLock, FaCamera, FaNetworkWired, FaBell, FaBroadcast
 import { useEffect } from "react";
 import { useLocation, Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import theater from "../assets/theater.jpg"
+import theater from "../assets/theater2.jpg"
 
 function Services() {
     const location = useLocation();
