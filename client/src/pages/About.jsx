@@ -21,7 +21,7 @@ function About() {
             <Navbar />
             {/* Helmet for SEO titles and meta tags*/}
             <Helmet>
-                <title>About Us | California Compliance Security Services</title>
+                <title>About Us | California Compliance Security Services test</title>
                 <meta
                     name="description"
                     content="Learn more about California Compliance Security Services — a trusted provider of custom low voltage, security, and audio/visual solutions for homes and businesses across California."
