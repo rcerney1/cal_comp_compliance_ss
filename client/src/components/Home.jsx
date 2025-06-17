@@ -1,9 +1,9 @@
 import Navbar from "./Navbar";
-import heroImage from "../assets/hero.jpg";
-import section1Image from "../assets/section1.jpg";
-import elegantHome from "../assets/elegant_home_2.jpg"
+import heroD from '../assets/home/hero-d.webp'
+import heroM from '../assets/home/hero-m.webp'
+import section1D from '../assets/home/section1-d.webp'
+import section1M from '../assets/home/section1-m.webp'
 import Footer from "./Footer";
-import sophisticated from "../assets/sophisticated.jpg"
 import { Link, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
@@ -33,11 +33,23 @@ function Home() {
                 <Navbar />
                 {/* Hero Section */}
                 <section className="relative w-full h-screen">
-                    <img
+                    {/* <img
                         src={sophisticated}
                         alt="Security technician"
                         className="absolute inset-0 w-full h-full object-cover object-center"
-                    />
+                    /> */}
+                    <picture className="absolute inset-0 w-full h-full">
+                        <source media="(max-width: 640px)" srcSet={heroM} />
+                        <source media="(min-width: 641px)" srcSet={heroD} />
+                        <img
+                            src={heroD}
+                            alt="Sophisticated Living Room"
+                            className="w-full h-full object-cover object-center"
+                            loading="eager"
+                            fetchpriority="high"
+                        />
+                    </picture>
+
                     <div className="absolute inset-0 bg-black/40 flex flex-col items-start justify-end px-6 md:px-16 text-left pb-24 md:pb-40">
                         <h1
                             className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-4 max-w-5xl"
@@ -93,11 +105,18 @@ function Home() {
                     <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
                         {/* Image */}
                         <div>
-                            <img
-                                src={section1Image}
-                                alt="Technician working"
-                                className="w-full h-auto rounded-lg shadow-md"
-                            />
+                            <picture>
+                                <source media="(max-width: 600px)" srcSet={section1M} />
+                                <source media="(min-width: 601px)" srcSet={section1D} />
+                                <img
+                                    src={section1D}
+                                    alt="Technician working"
+                                    className="w-full h-auto rounded-lg shadow-md"
+                                    loading="lazy"
+                                    decoding="async"
+                                />
+                            </picture>
+
                         </div>
 
                         {/* Text */}
