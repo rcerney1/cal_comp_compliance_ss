@@ -21,8 +21,8 @@ function Navbar() {
     return (
         <header
             className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled
-                    ? "bg-white dark:bg-gray-900 shadow text-gray-900 dark:text-white"
-                    : "bg-transparent text-white"
+                ? "bg-white dark:bg-gray-900 shadow text-gray-900 dark:text-white"
+                : "bg-transparent text-white"
                 } ${isLightPage ? "text-black" : ""}`}
         >
             <div className="w-full px-6 md:px-12 py-6 flex items-center justify-between">
@@ -31,10 +31,10 @@ function Navbar() {
                     <Link
                         to="/"
                         className={`text-2xl md:text-3xl font-serif font-semibold whitespace-nowrap ${scrolled
-                                ? "text-gray-900 dark:text-white"
-                                : isLightPage
-                                    ? "text-black"
-                                    : "text-white"
+                            ? "text-gray-900 dark:text-white"
+                            : isLightPage
+                                ? "text-black"
+                                : "text-white"
                             }`}
                     >
                         CCSS
@@ -47,10 +47,10 @@ function Navbar() {
                         <Link
                             to="/about"
                             className={`py-3 hover:text-[#d07461] transition-colors ${scrolled
-                                    ? "text-gray-900 dark:text-white"
-                                    : isLightPage
-                                        ? "text-black"
-                                        : "text-white"
+                                ? "text-gray-900 dark:text-white"
+                                : isLightPage
+                                    ? "text-black"
+                                    : "text-white"
                                 }`}
                         >
                             About
@@ -58,10 +58,10 @@ function Navbar() {
                         <Link
                             to="/services"
                             className={`py-3 hover:text-[#d07461] transition-colors ${scrolled
-                                    ? "text-gray-900 dark:text-white"
-                                    : isLightPage
-                                        ? "text-black"
-                                        : "text-white"
+                                ? "text-gray-900 dark:text-white"
+                                : isLightPage
+                                    ? "text-black"
+                                    : "text-white"
                                 }`}
                         >
                             Services
@@ -69,10 +69,10 @@ function Navbar() {
                         <Link
                             to="/projects"
                             className={`py-3 hover:text-[#d07461] transition-colors ${scrolled
-                                    ? "text-gray-900 dark:text-white"
-                                    : isLightPage
-                                        ? "text-black"
-                                        : "text-white"
+                                ? "text-gray-900 dark:text-white"
+                                : isLightPage
+                                    ? "text-black"
+                                    : "text-white"
                                 }`}
                         >
                             Our Projects
@@ -80,10 +80,10 @@ function Navbar() {
                         <Link
                             to="/contact"
                             className={`py-3 hover:text-[#d07461] transition-colors ${scrolled
-                                    ? "text-gray-900 dark:text-white"
-                                    : isLightPage
-                                        ? "text-black"
-                                        : "text-white"
+                                ? "text-gray-900 dark:text-white"
+                                : isLightPage
+                                    ? "text-black"
+                                    : "text-white"
                                 }`}
                         >
                             Contact
@@ -106,10 +106,10 @@ function Navbar() {
                 {/* Mobile Menu Toggle */}
                 <button
                     className={`md:hidden ml-auto ${scrolled
-                            ? "text-gray-900 dark:text-white"
-                            : isLightPage
-                                ? "text-black"
-                                : "text-white"
+                        ? "text-gray-900 dark:text-white"
+                        : isLightPage
+                            ? "text-black"
+                            : "text-white"
                         }`}
                     onClick={() => setMenuOpen(!menuOpen)}
                     aria-label="Toggle menu"
@@ -152,12 +152,15 @@ function Navbar() {
                         >
                             Contact
                         </Link>
-                        <Link
-                            to="/contact"
-                            className="bg-[#d07461] hover:bg-[#b65f51] text-white font-semibold px-6 py-3 rounded-md transition"
-                        >
-                            Get Started
+                        <Link to="/contact">
+                            <a
+                                href="#"
+                                className="bg-[#e79c8b] hover:bg-[#d98978] text-[#1a1a1a] font-bold px-8 py-3 rounded-md transition"
+                            >
+                                Get Started
+                            </a>
                         </Link>
+
                     </nav>
                 </div>
             )}
