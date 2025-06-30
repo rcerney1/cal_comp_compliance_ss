@@ -46,7 +46,7 @@ function Navbar() {
                     >
                         <Link
                             to="/about"
-                            className={`py-3 hover:text-[#e79c8b] transition-colors ${scrolled
+                            className={`py-3 hover:text-[#d07461] transition-colors ${scrolled
                                     ? "text-gray-900 dark:text-white"
                                     : isLightPage
                                         ? "text-black"
@@ -57,7 +57,7 @@ function Navbar() {
                         </Link>
                         <Link
                             to="/services"
-                            className={`py-3 hover:text-[#e79c8b] transition-colors ${scrolled
+                            className={`py-3 hover:text-[#d07461] transition-colors ${scrolled
                                     ? "text-gray-900 dark:text-white"
                                     : isLightPage
                                         ? "text-black"
@@ -68,7 +68,7 @@ function Navbar() {
                         </Link>
                         <Link
                             to="/projects"
-                            className={`py-3 hover:text-[#e79c8b] transition-colors ${scrolled
+                            className={`py-3 hover:text-[#d07461] transition-colors ${scrolled
                                     ? "text-gray-900 dark:text-white"
                                     : isLightPage
                                         ? "text-black"
@@ -79,7 +79,7 @@ function Navbar() {
                         </Link>
                         <Link
                             to="/contact"
-                            className={`py-3 hover:text-[#e79c8b] transition-colors ${scrolled
+                            className={`py-3 hover:text-[#d07461] transition-colors ${scrolled
                                     ? "text-gray-900 dark:text-white"
                                     : isLightPage
                                         ? "text-black"
@@ -96,7 +96,7 @@ function Navbar() {
                     <div className="hidden md:block">
                         <Link
                             to="/contact"
-                            className="bg-[#e79c8b] hover:bg-[#d98978] text-white font-semibold px-8 py-3 rounded-md transition"
+                            className="bg-[#d07461] hover:bg-[#d98978] text-white font-semibold px-8 py-3 rounded-md transition"
                         >
                             Get Started
                         </Link>
@@ -130,25 +130,25 @@ function Navbar() {
                     >
                         <Link
                             to="/about"
-                            className="text-gray-900 dark:text-white hover:text-[#e79c8b] transition-colors py-3"
+                            className="text-gray-900 dark:text-white hover:text-[#d07461] transition-colors py-3"
                         >
                             About
                         </Link>
                         <Link
                             to="/services"
-                            className="text-gray-900 dark:text-white hover:text-[#e79c8b] transition-colors py-3"
+                            className="text-gray-900 dark:text-white hover:text-[#d07461] transition-colors py-3"
                         >
                             Services
                         </Link>
                         <Link
                             to="/projects"
-                            className="text-gray-900 dark:text-white hover:text-[#e79c8b] transition-colors py-3"
+                            className="text-gray-900 dark:text-white hover:text-[#d07461] transition-colors py-3"
                         >
                             Our Projects
                         </Link>
                         <Link
                             to="/contact"
-                            className="text-gray-900 dark:text-white hover:text-[#e79c8b] transition-colors py-3"
+                            className="text-gray-900 dark:text-white hover:text-[#d07461] transition-colors py-3"
                         >
                             Contact
                         </Link>
