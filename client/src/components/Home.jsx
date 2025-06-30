@@ -68,7 +68,7 @@ function Home() {
                     </p>
                     <Link to="/about">
                         <button className="bg-[#e79c8b] hover:bg-[#d98978] text-[#1a1a1a] font-medium px-8 py-3 rounded-md transition">
-                            Learn More
+                            Learn more about our team
                         </button>
                     </Link>
                 </section>
