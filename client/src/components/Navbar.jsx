@@ -94,12 +94,15 @@ function Navbar() {
                 {/* Right: CTA Button */}
                 {!isContactPage && (
                     <div className="hidden md:block">
-                        <Link
-                            to="/contact"
-                            className="bg-[#d07461] hover:bg-[#d98978] text-white font-semibold px-8 py-3 rounded-md transition"
-                        >
-                            Get Started
+                        <Link to="/contact">
+                            <a
+                                href="#"
+                                className="bg-[#e79c8b] hover:bg-[#d98978] text-[#1a1a1a] font-bold px-8 py-3 rounded-md transition"
+                            >
+                                Get Started
+                            </a>
                         </Link>
+
                     </div>
                 )}
 
