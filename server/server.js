@@ -2,25 +2,26 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const path = require('path');
+const compression = require('compression'); // ✅ ADD THIS
 const { sendEmail } = require('./emailService');
-const helmet = require('helmet')
+const helmet = require('helmet');
 
 const app = express();
 const port = process.env.PORT || 5000;
 
 require('dotenv').config();
 
+// ✅ ENABLE GZIP COMPRESSION
+app.use(compression()); // ✅ ADD THIS LINE before other middleware
+
 // Middleware
-app.use(cors()); // Allow cross-origin requests
-app.use(bodyParser.json()); // Parse JSON bodies
-
-
+app.use(cors());
+app.use(bodyParser.json());
 
 // Handle form submission
 app.post('/api/send-email', async (req, res) => {
     const { name, email, message } = req.body;
-    console.log('something anything')
-    console.log(req.body); // Logs the form submission data
+    console.log(req.body);
 
     if (!name || !email || !message) {
         return res.status(400).json({ success: false, message: 'All fields are required.' });
@@ -29,7 +30,6 @@ app.post('/api/send-email', async (req, res) => {
     const subject = `Contact Form Submission from ${name}`;
     const body = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
 
-    // Send the email
     const result = await sendEmail(email, subject, body);
 
     if (result.success) {
@@ -41,11 +41,8 @@ app.post('/api/send-email', async (req, res) => {
 
 // Serve static files from the React app in production
 if (process.env.NODE_ENV === 'production') {
-    // Serve static files from the React app's build folder
     app.use(express.static(path.join(__dirname, '../client', 'dist')));
 
-
-    // Serve index.html for all non-API requests (enables React routing)
     app.get('/*', (req, res) => {
         res.sendFile(path.join(__dirname, '../client', 'dist', 'index.html'));
     });
