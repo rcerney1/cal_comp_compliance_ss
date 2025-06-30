@@ -2,6 +2,9 @@ import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+
 
 import proj1img1D from "../assets/gallery/proj1img1-d.webp";
 import proj1img1M from "../assets/gallery/proj1img1-m.webp";
@@ -79,6 +82,9 @@ const allImages = [
 
 function Gallery() {
     const [filter, setFilter] = useState("all");
+    const [lightboxOpen, setLightboxOpen] = useState(false);
+    const [lightboxIndex, setLightboxIndex] = useState(0);
+
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -114,8 +120,8 @@ function Gallery() {
                                     key={cat.value}
                                     onClick={() => setFilter(cat.value)}
                                     className={`text-sm font-semibold pb-2 border-b-2 transition-colors duration-200 ${filter === cat.value
-                                            ? "border-[#e79c8b] text-[#e79c8b]"
-                                            : "border-transparent text-gray-700 hover:text-[#e79c8b]"
+                                        ? "border-[#e79c8b] text-[#e79c8b]"
+                                        : "border-transparent text-gray-700 hover:text-[#e79c8b]"
                                         }`}
                                 >
                                     {cat.label}
@@ -129,7 +135,12 @@ function Gallery() {
                             <a
                                 key={`${filter}-${i}`}
                                 href="#"
-                                className="relative overflow-hidden group h-80"
+                                className="relative overflow-hidden group aspect-[4/3]"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    setLightboxIndex(i);
+                                    setLightboxOpen(true);
+                                }}
                             >
                                 <picture>
                                     <source media="(max-width: 640px)" srcSet={srcM} />
@@ -139,7 +150,7 @@ function Gallery() {
                                         alt={title}
                                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 group-hover:opacity-60"
                                         width="1000"
-                                        height="320"
+                                        height="750"
                                         loading="lazy"
                                         decoding="async"
                                     />
@@ -154,7 +165,17 @@ function Gallery() {
                                 </div>
                             </a>
                         ))}
+
                     </div>
+                    <Lightbox
+                        open={lightboxOpen}
+                        close={() => setLightboxOpen(false)}
+                        index={lightboxIndex}
+                        slides={filteredImages.map(({ srcD, title }) => ({
+                            src: srcD,
+                            alt: title,
+                        }))}
+                    />
                 </div>
             </section>
 
