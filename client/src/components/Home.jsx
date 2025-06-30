@@ -67,7 +67,7 @@ function Home() {
                         We specialize in designing and installing low voltage security systems tailored to the unique needs of high-end homes and businesses. From data and voice cabling to advanced surveillance and entry systems — we deliver professional, discreet, and reliable service every time.
                     </p>
                     <Link to="/about">
-                        <button className="bg-[#e79c8b] hover:bg-[#d98978] text-[#f9f9f9] font-medium px-8 py-3 rounded-md transition">
+                        <button className="bg-[#e79c8b] hover:bg-[#d98978] text-[#2e2e2e] font-medium px-8 py-3 rounded-md transition">
                             Learn more about our team
                         </button>
                     </Link>
@@ -128,7 +128,7 @@ function Home() {
                         <Link to="/services">
                             <a
                                 href="#services"
-                                className="bg-[#e79c8b] hover:bg-[#d98978] text-[#f9f9f9] font-semibold px-8 py-3 rounded-md transition"
+                                className="bg-[#e79c8b] hover:bg-[#d98978] text-[#2e2e2e] font-semibold px-8 py-3 rounded-md transition"
                             >
                                 View Our Full Services
                             </a>
@@ -145,7 +145,7 @@ function Home() {
                     <Link to="/contact">
                         <a
                             href="#"
-                            className="bg-[#e79c8b] hover:bg-[#d98978] text-[#f9f9f9] font-semibold px-8 py-3 rounded-md transition"
+                            className="bg-[#e79c8b] hover:bg-[#d98978] text-[#2e2e2e] font-semibold px-8 py-3 rounded-md transition"
                         >
                             Get Started
                         </a>
