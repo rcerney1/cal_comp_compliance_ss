@@ -108,7 +108,7 @@ function Navbar() {
                     </div>
                 )}
 
-                {/* Mobile Menu Toggle */}
+                {/* Mobile Menu Toggler */}
                 <button
                     className={`md:hidden ml-auto ${scrolled
                         ? "text-gray-900 dark:text-white"
