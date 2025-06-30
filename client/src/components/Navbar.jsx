@@ -18,6 +18,11 @@ function Navbar() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
+    // Prevent background scroll when mobile menu is open
+    useEffect(() => {
+        document.body.style.overflow = menuOpen ? "hidden" : "auto";
+    }, [menuOpen]);
+
     return (
         <header
             className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled
@@ -91,7 +96,7 @@ function Navbar() {
                     </nav>
                 </div>
 
-                {/* Right: CTA Buttons */}
+                {/* Right: CTA Button */}
                 {!isContactPage && (
                     <div className="hidden md:block">
                         <Link to="/contact">
@@ -99,10 +104,9 @@ function Navbar() {
                                 href="#"
                                 className="bg-[#e79c8b] hover:bg-[#d98978] text-[#1a1a1a] font-bold px-8 py-3 rounded-md transition"
                             >
-                                Get Started 
+                                Get Started
                             </a>
                         </Link>
-
                     </div>
                 )}
 
@@ -114,57 +118,65 @@ function Navbar() {
                             ? "text-black"
                             : "text-white"
                         }`}
-                    onClick={() => setMenuOpen(!menuOpen)}
-                    aria-label="Toggle menu"
-                    aria-expanded={menuOpen}
+                    onClick={() => setMenuOpen(true)}
+                    aria-label="Open menu"
                     aria-controls="mobile-nav"
+                    aria-expanded={menuOpen}
                 >
-                    {menuOpen ? <X size={24} /> : <Menu size={24} />}
+                    <Menu size={24} />
                 </button>
             </div>
 
-            {/* Mobile Nav Dropdown */}
+            {/* Full-Screen Mobile Nav */}
             {menuOpen && (
-                <div className="md:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700">
-                    <nav
-                        className="flex flex-col items-center space-y-4 py-4"
-                        aria-label="Mobile menu"
-                        id="mobile-nav"
+                <div
+                    className="fixed inset-0 z-40 bg-white dark:bg-gray-900 flex flex-col items-center justify-center space-y-8 px-6"
+                    id="mobile-nav"
+                    aria-label="Mobile menu"
+                >
+                    <button
+                        onClick={() => setMenuOpen(false)}
+                        aria-label="Close menu"
+                        className="absolute top-6 right-6 text-gray-900 dark:text-white"
                     >
-                        <Link
-                            to="/about"
-                            className="text-gray-900 dark:text-white hover:text-[#d07461] transition-colors py-3"
-                        >
-                            About
-                        </Link>
-                        <Link
-                            to="/services"
-                            className="text-gray-900 dark:text-white hover:text-[#d07461] transition-colors py-3"
-                        >
-                            Services
-                        </Link>
-                        <Link
-                            to="/projects"
-                            className="text-gray-900 dark:text-white hover:text-[#d07461] transition-colors py-3"
-                        >
-                            Our Projects
-                        </Link>
-                        <Link
-                            to="/contact"
-                            className="text-gray-900 dark:text-white hover:text-[#d07461] transition-colors py-3"
-                        >
-                            Contact
-                        </Link>
-                        <Link to="/contact">
-                            <a
-                                href="#"
-                                className="bg-[#e79c8b] hover:bg-[#d98978] text-[#1a1a1a] font-bold px-8 py-3 rounded-md transition"
-                            >
-                                Get Started
-                            </a>
-                        </Link>
+                        <X size={28} />
+                    </button>
 
-                    </nav>
+                    <Link
+                        to="/about"
+                        onClick={() => setMenuOpen(false)}
+                        className="text-2xl text-gray-900 dark:text-white hover:text-[#d07461] transition py-4"
+                    >
+                        About
+                    </Link>
+                    <Link
+                        to="/services"
+                        onClick={() => setMenuOpen(false)}
+                        className="text-2xl text-gray-900 dark:text-white hover:text-[#d07461] transition py-4"
+                    >
+                        Services
+                    </Link>
+                    <Link
+                        to="/projects"
+                        onClick={() => setMenuOpen(false)}
+                        className="text-2xl text-gray-900 dark:text-white hover:text-[#d07461] transition py-4"
+                    >
+                        Our Projects
+                    </Link>
+                    <Link
+                        to="/contact"
+                        onClick={() => setMenuOpen(false)}
+                        className="text-2xl text-gray-900 dark:text-white hover:text-[#d07461] transition py-4"
+                    >
+                        Contact
+                    </Link>
+                    <Link
+                        to="/contact"
+                        onClick={() => setMenuOpen(false)}
+                        className="bg-[#e79c8b] hover:bg-[#d98978] text-[#1a1a1a] font-bold px-8 py-3 rounded-md transition"
+                    >
+                        Get Started
+                    </Link>
                 </div>
             )}
         </header>
