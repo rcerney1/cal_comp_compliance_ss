@@ -154,7 +154,7 @@ function Navbar() {
                         </Link>
                         <Link
                             to="/contact"
-                            className="bg-[#e79c8b] hover:bg-[#d98978] text-white font-semibold px-6 py-3 rounded-md transition"
+                            className="bg-[#d07461] hover:bg-[#b65f51] text-white font-semibold px-6 py-3 rounded-md transition"
                         >
                             Get Started
                         </Link>
