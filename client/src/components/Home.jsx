@@ -242,7 +242,7 @@ function Home() {
                     <Link to="/contact">
                         <a
                             href="#"
-                            className="bg-[#d07461] hover:bg-[#d98978] text-white font-semibold px-8 py-3 rounded-md transition"
+                            className="bg-[#cd6e5d] hover:bg-[#d98978] text-white font-semibold px-8 py-3 rounded-md transition"
                         >
                             Get Started
                         </a>
