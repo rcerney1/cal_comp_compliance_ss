@@ -91,7 +91,7 @@ function Navbar() {
                     </nav>
                 </div>
 
-                {/* Right: CTA Button */}
+                {/* Right: CTA Buttons */}
                 {!isContactPage && (
                     <div className="hidden md:block">
                         <Link to="/contact">
@@ -99,7 +99,7 @@ function Navbar() {
                                 href="#"
                                 className="bg-[#e79c8b] hover:bg-[#d98978] text-[#1a1a1a] font-bold px-8 py-3 rounded-md transition"
                             >
-                                Get Started
+                                Get Started 
                             </a>
                         </Link>
 
