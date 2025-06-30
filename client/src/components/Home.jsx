@@ -94,7 +94,7 @@ function Home() {
                         service every time.
                     </p>
                     <Link to="/about">
-                        <button className="bg-[#e79c8b] hover:bg-[#d98978] text-white font-medium px-8 py-3 rounded-md transition">
+                        <button className="bg-[#d07461] hover:bg-[#d98978] text-white font-medium px-8 py-3 rounded-md transition">
                             Learn More
                         </button>
                     </Link>
@@ -147,7 +147,7 @@ function Home() {
                         {/* Service 1: Data & Voice Cabling */}
                         <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow">
                             <div className="flex items-center justify-center mb-4">
-                                <i className="fas fa-plug text-4xl text-[#e79c8b]"></i>
+                                <i className="fas fa-plug text-4xl text-[#d07461]"></i>
                             </div>
                             <h3 className="text-2xl font-semibold mb-4">Data & Voice Cabling</h3>
                             <p className="text-lg text-gray-700 mb-4">
@@ -159,7 +159,7 @@ function Home() {
                         {/* Service 2: Automation Solutions */}
                         <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow">
                             <div className="flex items-center justify-center mb-4">
-                                <i className="fas fa-cogs text-4xl text-[#e79c8b]"></i>
+                                <i className="fas fa-cogs text-4xl text-[#d07461]"></i>
                             </div>
                             <h3 className="text-2xl font-semibold mb-4">Automation Solutions</h3>
                             <p className="text-lg text-gray-700 mb-4">
@@ -172,7 +172,7 @@ function Home() {
                         {/* Service 3: Audio/Video Cabling */}
                         <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow">
                             <div className="flex items-center justify-center mb-4">
-                                <i className="fas fa-video text-4xl text-[#e79c8b]"></i>
+                                <i className="fas fa-video text-4xl text-[#d07461]"></i>
                             </div>
                             <h3 className="text-2xl font-semibold mb-4">Audio/Video Cabling</h3>
                             <p className="text-lg text-gray-700 mb-4">
@@ -184,7 +184,7 @@ function Home() {
                         {/* Service 4: Surveillance Systems */}
                         <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow">
                             <div className="flex items-center justify-center mb-4">
-                                <i className="fas fa-video text-4xl text-[#e79c8b]"></i>
+                                <i className="fas fa-video text-4xl text-[#d07461]"></i>
                             </div>
                             <h3 className="text-2xl font-semibold mb-4">Surveillance Systems</h3>
                             <p className="text-lg text-gray-700 mb-4">
@@ -196,7 +196,7 @@ function Home() {
                         {/* Service 5: Entry Systems */}
                         <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow">
                             <div className="flex items-center justify-center mb-4">
-                                <i className="fas fa-lock text-4xl text-[#e79c8b]"></i>
+                                <i className="fas fa-lock text-4xl text-[#d07461]"></i>
                             </div>
                             <h3 className="text-2xl font-semibold mb-4">Entry Systems</h3>
                             <p className="text-lg text-gray-700 mb-4">
@@ -208,7 +208,7 @@ function Home() {
                         {/* Service 6: Nurse Call Stations */}
                         <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow">
                             <div className="flex items-center justify-center mb-4">
-                                <i className="fas fa-bell text-4xl text-[#e79c8b]"></i>
+                                <i className="fas fa-bell text-4xl text-[#d07461]"></i>
                             </div>
                             <h3 className="text-2xl font-semibold mb-4">Nurse Call Stations</h3>
                             <p className="text-lg text-gray-700 mb-4">
@@ -223,7 +223,7 @@ function Home() {
                         <Link to="/services">
                             <a
                                 href="#services"
-                                className="bg-[#e79c8b] hover:bg-[#d98978] text-white font-semibold px-8 py-3 rounded-md transition"
+                                className="bg-[#d07461] hover:bg-[#d98978] text-white font-semibold px-8 py-3 rounded-md transition"
                             >
                                 View Our Full Services
                             </a>
