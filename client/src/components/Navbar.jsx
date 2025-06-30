@@ -100,7 +100,7 @@ function Navbar() {
                         <Link to="/contact">
                             <a
                                 href="#"
-                                className="bg-[#e79c8b] hover:bg-[#d98978] text-[#1a1a1a] font-bold px-8 py-3 rounded-md transition"
+                                className="bg-[#e79c8b] hover:bg-[#d98978] text-[#f9f9f9] font-bold px-8 py-3 rounded-md transition"
                             >
                                 Get Started
                             </a>
@@ -171,7 +171,7 @@ function Navbar() {
                     <Link
                         to="/contact"
                         onClick={() => setMenuOpen(false)}
-                        className="bg-[#e79c8b] hover:bg-[#d98978] text-[#1a1a1a] font-bold px-8 py-3 rounded-md transition"
+                        className="bg-[#e79c8b] hover:bg-[#d98978] text-[#f9f9f9] font-bold px-8 py-3 rounded-md transition"
                     >
                         Get Started
                     </Link>
