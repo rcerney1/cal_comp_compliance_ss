@@ -8,6 +8,7 @@ export default defineConfig({
     allowedHosts: true
   },
   build: {
-    outDir: 'dist', // ✅ still good
+    outDir: 'dist',
+    target: 'esnext',
   },
 })
