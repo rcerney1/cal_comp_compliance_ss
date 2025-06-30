@@ -45,10 +45,8 @@ function Navbar() {
                         CCSS
                     </Link>
 
-                    <nav
-                        className="hidden md:flex space-x-8 text-base font-medium items-center"
-                        aria-label="Main navigation"
-                    >
+                    <nav className="hidden md:flex gap-10 text-base font-medium items-center" aria-label="Main navigation">
+
                         <Link
                             to="/about"
                             className={`py-3 hover:text-[#d07461] transition-colors ${scrolled
