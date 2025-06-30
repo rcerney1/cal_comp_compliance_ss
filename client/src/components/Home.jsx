@@ -114,6 +114,8 @@ function Home() {
                                     className="w-full h-auto rounded-lg shadow-md"
                                     loading="lazy"
                                     decoding="async"
+                                    width="640"
+                                    height="426"
                                 />
                             </picture>
 
