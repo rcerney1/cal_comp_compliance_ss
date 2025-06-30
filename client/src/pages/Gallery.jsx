@@ -20,6 +20,10 @@ import proj1img6D from "../assets/gallery/proj1img6-d.webp";
 import proj1img6M from "../assets/gallery/proj1img6-m.webp";
 import proj1img7D from "../assets/gallery/proj1img7-d.webp";
 import proj1img7M from "../assets/gallery/proj1img7-m.webp";
+import proj1img8D from "../assets/gallery/proj1img8-d.webp";
+import proj1img8M from "../assets/gallery/proj1img8-m.webp";
+import proj1img9D from "../assets/gallery/proj1img9-d.webp";
+import proj1img9M from "../assets/gallery/proj1img9-m.webp";
 
 const categories = [
     { label: "All", value: "all" },
@@ -78,6 +82,21 @@ const allImages = [
         title: "Projector Setup for Home Theater",
         category: "automation",
     },
+    {
+        srcD: proj1img8D,
+        srcM: proj1img8M,
+        tag: "Cabling",
+        title: "Concealed Rack Cabinet",
+        category: "cabling"
+    },
+    {
+        srcD: proj1img9D,
+        srcM: proj1img9M,
+        tag: "Cabling",
+        title: "Built-In Equipment Rack",
+        category: "cabling"
+    },
+
 ];
 
 function Gallery() {
