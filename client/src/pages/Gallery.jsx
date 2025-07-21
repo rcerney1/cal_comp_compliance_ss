@@ -24,6 +24,7 @@ import proj1img8D from "../assets/gallery/proj1img8-d.webp";
 import proj1img8M from "../assets/gallery/proj1img8-m.webp";
 import proj1img9D from "../assets/gallery/proj1img9-d.webp";
 import proj1img9M from "../assets/gallery/proj1img9-m.webp";
+// 
 
 const categories = [
     { label: "All", value: "all" },
